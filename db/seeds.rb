@@ -17,5 +17,6 @@ puts "Creating freebies..."
 # * and a freebie belongs to a company.                         *
 # ***************************************************************
 # Create freebies Here
+Freebie.create(company_id: Company.find_by(name: "Google").id, dev_id: Dev.find_by(name: "Rick").id)
 
 puts "Seeding done!"
